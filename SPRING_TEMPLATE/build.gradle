@@ -1,0 +1,23 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.ycc'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+/* Required dependencies */
+dependencies {
+	/* Spring Web */
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	/* JSP & Taglibs */
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.27'
+	implementation 'javax.servlet:jstl:1.2'
+}
